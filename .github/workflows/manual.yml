@@ -1,0 +1,16 @@
+name: Manual Greeting
+ 
+on:
+  workflow_dispatch:              # trigger แบบกดปุ่มรันเองจากหน้าเว็บ
+    inputs:
+      username:
+        description: "ชื่อของคุณ"
+        required: true
+        default: "นักศึกษา"
+ 
+jobs:
+  greet:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Personal greeting
+        run: echo "สวัสดีคุณ ${{ inputs.username }} ยินดีต้อนรับสู่โลก DevOps!"
