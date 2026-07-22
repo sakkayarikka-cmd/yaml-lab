@@ -13,4 +13,4 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Personal greeting
-        run: echo "สวัสดีคุณ ${{ inputs.username }} ยินดีต้อนรับสู่โลก DevOps!"
+        run: echo "สวัสดีคุณ ${{ inputs.username }} ยินดีต้อนรับสู่โลก DevOps!" 
